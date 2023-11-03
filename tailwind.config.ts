@@ -10,8 +10,10 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: 'var(--font-VT323)',
-      },
-           
+      }, 
+      boxShadow: {
+        'custom': '0px 105px 37px -12px rgba(0, 0, 0, 0.75);',
+      },     
     },
   },
   plugins: [],
