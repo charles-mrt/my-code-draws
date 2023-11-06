@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`relative font-sans antialiased w-screen h-screen flex justify-center items-center bg-white ${vt323font.variable}`}>
+      <body className={`relative font-sans antialiased w-screen h-screen flex justify-center items-center bg-white ${vt323font.variable}`} >
 
         <div className="z-10 absolute">{children}</div>
 
@@ -43,7 +43,7 @@ export default function RootLayout({
             objectPosition='center'
           />
         </div>
-
+        
       </body>
     </html>
   );
