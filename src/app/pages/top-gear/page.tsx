@@ -17,13 +17,14 @@ import { Card } from '@/app/components/Card'
 import { SlideNavButtons } from '@/app/components/slide-button/SlideNavButtons'
 import { Header } from '@/app/components/pages/Header'
 import { Footer } from '@/app/components/pages/Footer'
+import { AudioPlayerControls } from '@/app/components/AudioPlayerControls'
 
 SwiperCore.use([Navigation, Pagination])
 
 export default function TopGear() {
   return (<>
-    <div className="min-w-[800px] w-auto  h-[600px] rounded-2xl border-[6px] border-orange-500 shadow-custom overflow-hidden">
-
+    <div className="min-w-[800px] w-auto  h-[600px] rounded-2xl border-[6px] border-orange-500 shadow-custom overflow-hidden relative">
+      
       <Header />
 
       <div className="relative w-full h-full overflow-hidden flex flex-col justify-center">
@@ -61,8 +62,12 @@ export default function TopGear() {
           className='bg-opacity-25'
         />
       </div>
-
+     
+      <div className="absolute z-50 bottom-0 left-0">
+        <AudioPlayerControls />
+      </div>
     </div>
+    
     <Footer />    
     </>
   )
