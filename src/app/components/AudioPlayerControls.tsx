@@ -8,12 +8,17 @@ export const AudioPlayerControls = () => {
   const top_gear_audio = "public/assets/audio/top-gear-audio.mp3"
   
   const [isPlaying, setIsPlaying] = useState(false)
-  const audioRef = useRef(null)
+  const audioRef = useRef<HTMLAudioElement | null>(null)
 
 
   const togglePlay = () => {
+    
     setIsPlaying(!isPlaying)
-    isPlaying ? audioRef.current.pause() : audioRef.current.play()
+    
+    if (audioRef.current) {
+      isPlaying ? audioRef.current.pause() : audioRef.current.play()
+    }
+    
   }
 
 
@@ -27,7 +32,7 @@ export const AudioPlayerControls = () => {
         )}
 
       </button>
-      <audio ref={audioRef} src={"/assets/audio/top-gear-audio.mp3"} />
+      <audio ref={audioRef} src={"/assets/audio/top-gear-audio.mp3"} autoPlay loop />
     </div>
   )
 }
