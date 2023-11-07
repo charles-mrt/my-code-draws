@@ -3,6 +3,7 @@ import { Exhaust } from "./Exhaust"
 import { Light } from "./Light"
 import { Tires } from "../Tires"
 import { Mirror } from "./Mirror"
+
 interface RedCar {
   tires: number
   mirrow: number

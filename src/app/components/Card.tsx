@@ -1,5 +1,5 @@
 
-import { RedCar } from '@/app/components/top-gear/red-car/Car'
+import { RedCar } from '@/app/components/top-gear/red-car/RedCar'
 
 export const Card = () => {
   return (

@@ -4,7 +4,7 @@ import { Grid3X3, PencilRuler, Square } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 import { Header } from '@/app/components/pages/Header'
-import { RedCar } from "@/app/components/top-gear/red-car/Car"
+import { RedCar } from "@/app/components/top-gear/red-car/RedCar"
 
 export default function drawMode() {
 
