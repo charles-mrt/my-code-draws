@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 
 import { Header } from '@/app/components/pages/Header'
 import { RedCar } from "@/app/components/top-gear/red-car/RedCar"
+import { PurpleCar } from '@/app/components/top-gear/purle-car/PurpleCar'
 
 export default function drawMode() {
 
@@ -48,7 +49,7 @@ export default function drawMode() {
 
       <div className="w-full h-full flex flex-col items-center justify-center z-10 fixed">
         <RedCar />
-        
+        <PurpleCar />
       </div>
 
       {isActivatedGrade ? (

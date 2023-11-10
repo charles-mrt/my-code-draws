@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image"
 import phone from '../../../public/image/phone.svg'
 import { useState, useRef } from "react"
@@ -5,7 +6,6 @@ import { useState, useRef } from "react"
 
 
 export const AudioPlayerControls = () => {
-  const top_gear_audio = "public/assets/audio/top-gear-audio.mp3"
   
   const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)

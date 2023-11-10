@@ -3,72 +3,42 @@ import Image from 'next/image'
 
 import card_bg from '../../../../public/image/card_bg.jpg'
 
-
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination } from 'swiper/core'
-import A11y from 'swiper'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-
-
-import { Card } from '@/app/components/Card'
-import { SlideNavButtons } from '@/app/components/slide-button/SlideNavButtons'
 import { Header } from '@/app/components/pages/Header'
 import { Footer } from '@/app/components/pages/Footer'
 import { AudioPlayerControls } from '@/app/components/AudioPlayerControls'
+import { CarSlider } from '@/app/components/slide/CarSlider'
 
-SwiperCore.use([Navigation, Pagination])
 
 export default function TopGear() {
-  return (<>
-    <div className="min-w-[800px] w-auto  h-[600px] rounded-2xl border-[6px] border-orange-500 shadow-custom overflow-hidden relative">
-      
-      <Header />
+  return (
+    <>
+      <div className="min-w-[800px] w-auto  h-[600px] rounded-2xl border-[6px] border-orange-500 shadow-custom overflow-hidden relative">
 
-      <div className="relative w-full h-full overflow-hidden flex flex-col justify-center">
+        <Header />
 
-        <div className="absolute z-10 h-full w-full">
+        <div className="relative w-full h-full overflow-hidden flex flex-col justify-center">
 
-          <h1 className="text-white text-3xl uppercase mt-10 text-center">
-            top gear
-          </h1>
+          <div className="absolute z-10 h-full w-full">
+            <h1 className="text-white text-3xl uppercase mt-10 text-center">top gear</h1>
+            <CarSlider />
+          </div>
 
-          <Swiper
-            loop={true}
-            pagination={{ clickable: true }}
-            className="mySwiper"
-            spaceBetween={20}
-            centeredSlides={true}
-            slidesPerView="auto"
-          >
-            {[1, 2, 3].map((index) => (
-              <SwiperSlide key={index} >
-                <Card />
-              </SwiperSlide >
-            ))}
-            <SlideNavButtons />
-          </Swiper>
-
+          <Image
+            src={card_bg}
+            alt="paisagem"
+            layout='fill'
+            objectFit='cover'
+            objectPosition='center'
+            className='bg-opacity-25'
+          />
         </div>
 
-        <Image
-          src={card_bg}
-          alt="paisagem"
-          layout='fill'
-          objectFit='cover'
-          objectPosition='center'
-          className='bg-opacity-25'
-        />
+        <div className="absolute z-50 bottom-0 left-0">
+          <AudioPlayerControls />
+        </div>
+
       </div>
-     
-      <div className="absolute z-50 bottom-0 left-0">
-        <AudioPlayerControls />
-      </div>
-    </div>
-    
-    <Footer />    
+      <Footer />
     </>
   )
 }
