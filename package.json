@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@types/swiper": "^6.0.0",
-    "lucide-react": "^0.292.0",
-    "next": "14.0.1",
+    "lucide-react": "^0.309.0",
+    "next": "^14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.0.3"
