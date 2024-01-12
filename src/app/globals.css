@@ -5,3 +5,12 @@
 .bg-radial-gradient {
   background: radial-gradient(circle at center, rgb(56 56 66) 54%, rgb(200 200 209 / 93%) 81%);
 }
+
+
+
+.welcome-shadow {
+  text-shadow: 1px 1px 0px #ffffff;
+} 
+.title-shadow {
+  text-shadow: 2px 2px 0px #fa8c16;
+}
