@@ -1,12 +1,12 @@
 'use clent'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination } from 'swiper/core'
+import SwiperCore, { Navigation, Pagination } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-
+1
 
 import { SlideNavButtons } from '@/app/components/slide/SlideNavButtons'
 import { RedCar } from '../top-gear/red-car/RedCar'
@@ -16,7 +16,7 @@ import { WhiteCar } from '../top-gear/white-car/WhiteCar'
 import { topGearData } from '@/app/data/top-gear/topGear'
 import { Card } from '../Card'
 
-SwiperCore.use([Navigation, Pagination])
+//SwiperCore.use([Navigation, Pagination])
 
 interface CarProps {
   name: string
