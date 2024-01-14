@@ -1,6 +1,3 @@
 export const PurpleCar = () => {
-
-  return (
-    <div>purple car</div>
-  )
+  return ( <div>em desenvolvimento</div> )
 }

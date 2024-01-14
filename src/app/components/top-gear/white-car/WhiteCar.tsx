@@ -1,6 +1,4 @@
 export const WhiteCar = () => {
 
-  return (
-    <div>white car</div>
-  )
+  return ( <div>em desenvolvimento</div> )
 }
