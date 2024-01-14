@@ -9,14 +9,7 @@ export default function Home() {
       title: "top gear... go go",
       url: "pages/top-gear"
     },
-    {
-      title: "mario... go go",
-      url: "pages/top-gear"
-    },
-    {
-      title: "cars... go go",
-      url: "pages/top-gear"
-    }
+   
   ]
 
   return (
