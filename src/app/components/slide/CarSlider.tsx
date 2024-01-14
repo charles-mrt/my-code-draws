@@ -1,7 +1,6 @@
 'use clent'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -16,8 +15,6 @@ import { WhiteCar } from '../top-gear/white-car/WhiteCar'
 import { topGearData } from '@/app/data/top-gear/topGear'
 import { Card } from '../Card'
 
-//SwiperCore.use([Navigation, Pagination])
-
 interface CarProps {
   name: string
   technologies: string[]
@@ -27,11 +24,11 @@ interface CarProps {
 
 function renderCarByType(type: string) {
   switch (type) {
-    case 'RedCar':
+    case 'redCar':
       return <RedCar />
-    case 'PurpleCar':
+    case 'purpleCar':
       return <PurpleCar />
-    case 'WhiteCar':
+    case 'whiteCar':
       return <WhiteCar />
     default:
       return null
