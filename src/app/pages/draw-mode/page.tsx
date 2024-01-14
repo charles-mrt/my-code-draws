@@ -48,8 +48,7 @@ export default function drawMode() {
       </div>
 
       <div className="w-full h-full flex flex-col items-center justify-center z-10 fixed">
-        <RedCar />
-        <PurpleCar />
+        <RedCar />       
       </div>
 
       {isActivatedGrade ? (
