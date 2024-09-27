@@ -17,8 +17,8 @@ export default function Home() {
 
     <main className="relative">
 
-      <audio src={"/assets/audio/city.mp3"} autoPlay loop muted />
-      <audio src={"/assets/audio/skate.mp3"} autoPlay loop muted />
+      <audio src={"/assets/audio/city.mp3"} autoPlay loop />
+      <audio src={"/assets/audio/skate.mp3"} autoPlay loop />
 
       <span className="text-6xl welcome-shadow" >bem vindo a </span>
       <h1 className="text-9xl  title-shadow" >My Code Draws </h1>
