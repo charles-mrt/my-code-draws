@@ -12,7 +12,7 @@ const vt323font = VT323({
 
 export const metadata = {
   title: {
-    default: 'Top Gear l - Cars',
+    default: 'My Code Draw',
     template: '%s | Top Gear Cars',
   },
   robots: {
